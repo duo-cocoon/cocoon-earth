@@ -1,3 +1,3 @@
-# cocoon-earth
+# Cocoon Earth
 
-[Cocoon Earth](https://duo-cocoon.github.io/cocoon-earth/)
+https://duo-cocoon.github.io/cocoon-earth/
