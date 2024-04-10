@@ -78,7 +78,7 @@
                         long = this[3]
                         photo = this[4]
 
-                        markers.addLayer(L.marker([parseFloat(lat), parseFloat(long)]).addTo(map).bindPopup("<center><img src=\"" + photo + "\" height=\"120px\" width=\"120px\" style=\"border-radius:50%\"/><br /><b>" + name + "</b></center>"));
+                        markers.addLayer(L.marker([parseFloat(lat), parseFloat(long)]).bindPopup("<center><img src=\"" + photo + "\" height=\"120px\" width=\"120px\" style=\"border-radius:50%\"/><br /><b>" + name + "</b></center>"));
                     }
                 });
             }
