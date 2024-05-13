@@ -142,9 +142,12 @@
         const searchValue = searchInput.value.toLowerCase();
         if (searchMap.has(searchValue)) {
           const marker = searchMap.get(searchValue);
-          markers.zoomToShowLayer(marker, function () {
-            marker.openPopup();
-          });
+          map.flyTo(marker.getLatLng(), 10);
+          setTimeout(() => {
+            markers.zoomToShowLayer(marker, function () {
+              marker.openPopup();
+            });
+          }, 2000);
         }
       });
     </script>
